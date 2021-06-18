@@ -1,0 +1,23 @@
+/*商品详情-导航样式*/
+#info {
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid #d2364c;
+    margin-top: 45px;
+}
+.mr-breadcrumb>li {
+display: inline-block;
+}
+.mr-breadcrumb-slash{
+max-width: 1200px;
+margin: 10px auto;
+}
+.mr-breadcrumb-slash>li+li:before {
+content: "/";
+padding: 0 8px;
+color: #ccc;
+}
+.mr-breadcrumb>.mr-active {
+color: #999;
+font-size:14px;
+}

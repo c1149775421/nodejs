@@ -1,0 +1,166 @@
+/*登录基本样式*/
+body {
+    position: relative;
+    background: #fff;
+}
+img {
+    width: 100%;
+}
+li, ol, ul {
+    list-style: none;
+}
+/*登录及左边手机*/
+.login-banner {
+    width: 100%;
+    height: 470px;
+    background: #fd7a72;
+}
+.login-main{
+    max-width: 1000px;
+    height: 470px;
+    margin: 0 auto;
+    position: relative;
+}
+.login-banner-bg{
+    display: block;
+    float: left;
+}
+/*登录右边表单*/
+.login-box{
+    width: 100%;
+    max-width: 360px;
+    height: 430px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 0;
+    background: #f8f8f8;
+    right: 2%;
+    padding: 10px 20px;
+	box-sizing: border-box;
+}
+h3.title{
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+	color:#333;
+	font-size:14px;
+}
+.login-box form label{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    text-align: center;
+    top: 1px;
+    left: 1px;
+}
+.login-box  form input{
+    font-size: 14px;
+    line-height: 18px;
+    height: 42px;
+    padding: 3px 0px 0px 50px;
+    width: 85%;
+    border: 1px solid #fff;
+	
+}
+.user-email, .user-name, .user-pass, .user-phone, .verification{
+    position: relative;
+    height: 42px;
+}
+.login-links{
+    max-width: 320px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.login-box input#remember-me{
+    margin: 4px 0 0;
+}
+.mr-fr {
+    float: right;
+}
+.mr-cf, .partner, form{
+    max-width: 640px;
+    margin: 20px auto;
+}
+.mr-cf input{
+    width: 100%;
+    font-size: 16px;
+}
+.mr-btn-primary {
+    color: #fff;
+    background-color: #0e90d2;
+    border-color: #0e90d2;
+}
+.mr-btn {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: .5em 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    transition: background-color .3s ease-out,border-color .3s ease-out;
+}
+.partner h3{
+    text-align: left;
+	font-size:14px;
+	color:#333;
+	font-weight: normal;
+}
+.mr-btn-group{
+    display: block;
+    overflow: hidden;
+}
+.mr-btn-group li{
+    width: 33.333%;
+    display: block;
+    float: left;
+	font-size:14px;
+}
+.mr-btn-group span{
+    display: inline-block;
+}
+.mr-btn-group i {
+    display: inline-block;
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+	font-size:24px;
+	width: 32px;
+	height: 42px; 
+	line-height: 42px;
+	margin: 0 auto; 
+	color: #0e90d2;
+}
+
+/* 注册 */
+.register .user-email,  .register .user-name, .register .user-pass, .register .user-phone,.register .verification{
+    position: relative;
+    height: 42px;
+    margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
