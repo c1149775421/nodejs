@@ -120,7 +120,13 @@
         //手机核数数组
         cores: ['十核','八核','双四核','四核','双核','单核']
       }
+    },
+    methods: {
+      show() {
+        this.$router.push({name:'Shopinfo'});//跳转到商品详情页面
+      }
     }
+
   }
 </script>
 

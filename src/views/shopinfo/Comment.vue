@@ -227,8 +227,15 @@
     </ul>
 
     <div class="clear"></div>
-     
-	<!--分页 -->
+      <ul class="mr-pagination mr-pagination-right">
+        <li :class="{'mr-disabled':curentPage==1}" @click="jump(curentPage-1)"><a href="javascript:void(0)">&laquo;</a></li>
+        <li :class="{'mr-active':curentPage==n}" v-for="n in pages" :key="n" @click="jump(n)">
+          <a href="javascript:void(0)">{{n}}</a>
+        </li>
+        <li :class="{'mr-disabled':curentPage==pages}" @click="jump(curentPage+1)"><a href="javascript:void(0)">&raquo;</a></li>
+      </ul>
+    <div class="clear"></div>
+	  <!--分页 -->
    
 
     <div class="tb-reviewsft">
@@ -247,7 +254,204 @@
         eachNum: 3,    //每页显示3条
         curentPage: 1  //默认显示当前第1页
       }
-    } 
+    },
+    //实现分页功能
+    mounted(){
+          //显示全部评价的前3条	
+          this.items = document.querySelectorAll('.mr-comment');
+          for(var i = 0; i < this.items.length; i++){
+            if(i < 3){	
+              this.items[i].style.display = 'block';
+            }else{
+              this.items[i].style.display = 'none';
+            }
+          }
+    },  
+    computed: {
+          count() {
+          //计算全部评价  
+            return this.items.length;
+          },
+          pages() {
+          //计算总共多少页  
+            return Math.ceil(this.count/this.eachNum);
+          }
+    },
+    //实现分页跳转功能
+    methods: {
+          jump(n) {
+            this.curentPage = n;
+            if(this.curentPage < 1){
+              this.curentPage = 1;
+            }
+            if(this.curentPage > this.pages){
+              this.curentPage = this.pages;
+            }
+            for(var i = 0; i < this.items.length; i++){
+              this.items[i].style.display = 'none';
+            }
+            var start = (this.curentPage - 1) * this.eachNum;
+            var end = start + this.eachNum;
+            end = end > this.count ? this.count : end;
+            for(var j = start; j < end; j++){
+              this.items[j].style.display = 'block';
+            }
+          }
+    }
   }
 </script>
-<style></style>
+
+<style src="@/assets/css/optstyle.css" scoped></style>
+<style src="@/assets/css/infoStyle.css" scoped></style>
+<style scoped>
+	.mr-comment-avatar {
+	    float: left;
+	    width: 48px;
+	    height: 48px;
+	    border-radius: 50%;	   
+	}
+	.mr-comment-main {
+	    position: relative;
+	    border: 1px solid #dedede;
+	    border-radius: 0;
+	}
+	.mr-comments-list .mr-comment {
+	    margin: 1.6rem 0 0 0;
+	    list-style: none;
+	}
+	.mr-comment:after, .mr-comment:before {
+	    content: " ";
+	    display: table;
+	}
+	.mr-comment:after {
+	    clear: both;
+	}
+	.mr-tabs-bd .mr-tab-panel {
+	    padding: 10px 10px 15px;
+	}
+	.mr-comment-main:after{
+	    position: absolute;
+	    top: 10px;
+	    left: -8px;
+	    right: 100%;
+	    width: 0;
+	    height: 0;
+	    display: block;
+	    content: " ";
+	    border-color: transparent;
+	    border-style: solid solid outset;
+	    border-width: 8px 8px 8px 0;
+	    pointer-events: none;
+		border-right-color:#dedede;
+	}
+
+    .mr-comment-meta a {
+        color: #999;
+    }
+	.mr-comment-author {
+	    font-weight: 700;
+	}
+	.mr-comment-meta {
+	    flex: 1;
+	    font-size: 13px;
+	    color: #999;
+	    line-height: 1.2;
+	    white-space: nowrap;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	}
+	.mr-comment-hd {
+	    background: #f8f8f8;
+	    border-bottom: 1px solid #eee;
+	    display: flex;
+	}
+	.tb-tbcr-content{
+	    color: #3f3f3f;
+	    font-size: 14px;
+	}
+	.tb-r-act-bar{
+		color: #3f3f3f;
+		font-size: 14px;
+	}
+	.tb-r-filter-bar {
+	    border: 1px solid #f5f5f5;
+	    background-color: #fafafa;
+	}
+	
+	.tb-r-filter-bar{
+	    margin-top: 20px;
+	}
+	
+     ul.tb-taglist.mr-avg-sm-4{
+		 border: 1px solid #f5f5f5;
+		 background-color: #fafafa;
+		 display: block;
+		 width:100%;
+		 height:20px;
+		 font-size:14px;
+		 color:#333;
+	 }
+	 
+	 .mr-avg-sm-4:after, .mr-avg-sm-4:before {
+	     content: " ";
+	     display: table;
+	 }
+	.tb-r-filter-bar li{
+	    text-align: left;
+	    width: auto;
+	    padding: 0 10px;
+	}
+     
+	 .rate{
+	     float: left;
+	     padding-top: 20px;
+	     display: block;
+	     margin-right: 30px;
+		 text-align: center;
+		 font-size:14px;
+		 line-height: 25px;
+		 color:#333;
+	 }
+	 .actor-new .comm-tags{
+	     float: left;
+	     height: 21px;
+	     line-height: 21px;
+	     padding: 0 7px;
+	     margin-right: 5px;
+	     background: #f47602;
+	     margin-bottom: 10px;
+	     color: #fff;
+		 font-size:14px;
+	 }
+	 .mr-pagination {
+	     position: relative;
+		 color: #999;
+		 padding-left: 0;
+		 text-align: right;
+		 right:-5px;
+	 } 
+	
+     .mr-pagination>li {
+         display: inline-block;
+     }
+
+	.mr-pagination>li>a, .mr-pagination>li>span {
+		position: relative;
+		display: block;
+		padding: .5em 1em;
+		text-decoration: none;
+		line-height: 1.2;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 0;
+		margin-bottom: 5px;
+		margin-right: 5px;
+	}
+	.mr-pagination>.mr-active>a, .mr-pagination>.mr-active>a:focus, .mr-pagination>.mr-active>a:hover, .mr-pagination>.mr-active>span, .mr-pagination>.mr-active>span:focus, .mr-pagination>.mr-active>span:hover {
+		z-index: 2;
+		color: #fff;
+		background-color: #0e90d2;
+		border-color: #0e90d2;
+		cursor: default;
+	}
+</style>
