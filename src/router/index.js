@@ -32,12 +32,12 @@ const routes = [
     meta: {title:'商品详情'},
     component: () => import('@/views/shopinfo/Shopinfo.vue')
   },
-  // {
-  //   path: '/shopcart',
-  //   name: 'Shopcart',
-  //   meta: {title:'购物车页面'},
-  //   component: () => import('@/views/index/Index.vue')
-  // },
+  {
+    path: '/shopcart',
+    name: 'Shopcart',
+    meta: {title:'购物车页面'},
+    component: () => import('@/views/shopcart/Shopcart.vue')
+  },
   // {
   //   path: '/pay',
   //   name: 'Pay',
