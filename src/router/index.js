@@ -38,12 +38,12 @@ const routes = [
     meta: {title:'购物车页面'},
     component: () => import('@/views/shopcart/Shopcart.vue')
   },
-  // {
-  //   path: '/pay',
-  //   name: 'Pay',
-  //   meta: {title:'支付页面'},
-  //   component: () => import('@/views/index/Index.vue')
-  // }
+  {
+    path: '/pay',
+    name: 'Pay',
+    meta: {title:'支付页面'},
+    component: () => import('@/views/pay/Pay.vue')
+  }
 ]
 
 const router = new VueRouter({
