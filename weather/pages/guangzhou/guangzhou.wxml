@@ -1,0 +1,8 @@
+<view class="content">
+    <view class="v2">
+      <view class="item">{{item}}°C</view>
+      <view class="minmax">{{min}}/{{max}}</view>
+      <view class="city">{{city}}</view>
+      <view class="wind">{{wind}}</view>
+    </view>
+</view>

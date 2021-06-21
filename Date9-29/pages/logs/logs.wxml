@@ -1,0 +1,52 @@
+<view>
+    <swiper indicator-dots="true" autoplay="true" interval="3000" class="sw1">
+        <swiper-item>
+            <image class="sw1" src="../../img/01.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/02.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/03.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/04.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/05.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/06.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/07.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/08.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/09.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/10.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/11.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/12.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/13.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/14.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/15.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="sw1" src="../../img/16.png"></image>
+        </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,36 @@
+<!--pages/test/test.wxml-->
+<view class="content">
+  <scroll-view class="box1" scroll-x="true">
+    <view class="box-item">推荐</view>
+    <view class="box-item">视频</view>
+    <view class="box-item">热点</view>
+    <view class="box-item">本地</view>
+    <view class="box-item">娱乐</view>
+  </scroll-view>
+
+  
+
+  <view>纵向滚动</view>
+  <scroll-view scroll-y="true" style="height:200px;">
+    <view id="red" style="width:100px;height:100px;background-color:red;"></view>
+    <view id="green" style="width:100px;height:100px;background-color:green;"></view>
+    <view id="blue" style="width:100px;height:100px;background-color:blue;"></view>
+    <view id="pink" style="width:100px;height:100px;background-color:pink;"></view>
+    <view id="" style="width:100px;height:100px;background-color:aqua;"></view>
+    <view id="" style="width:100px;height:100px;background-color:greenyellow;"></view>
+    <view id="" style="width:100px;height:100px;background-color:yellow;"></view>
+    <view id="" style="width:100px;height:100px;background-color:yellowgreen;"></view>
+  </scroll-view>
+
+  <view>横向滚动</view>
+  <scroll-view class="box" scroll-x="true">
+    <view id="red" style="width:100px;height:100px;background-color:red;"></view>
+    <view id="green" style="width:100px;height:100px;background-color:green;"></view>
+    <view id="blue" style="width:100px;height:100px;background-color:blue;"></view>
+    <view id="pink" style="width:100px;height:100px;background-color:pink;"></view>
+    <view id="" style="width:100px;height:100px;background-color:aqua;"></view>
+    <view id="" style="width:100px;height:100px;background-color:greenyellow;"></view>
+    <view id="" style="width:100px;height:100px;background-color:yellow;"></view>
+    <view id="" style="width:100px;height:100px;background-color:yellowgreen;"></view>
+  </scroll-view>
+</view>

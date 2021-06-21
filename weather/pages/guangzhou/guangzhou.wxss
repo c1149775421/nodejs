@@ -1,0 +1,27 @@
+/* pages/guangzhou/guangzhou.wxss */
+.content{
+  margin: 0 auto;
+  text-align: center;
+}
+.v2{
+  /* background-color: #ff6700; */
+  margin-top: 200rpx;
+}
+.item{
+  font-size: 50px;
+  color: aqua;
+  font-weight: bold;
+}
+.minmax{
+  margin-top: 50rpx;
+  font-size: 20px;
+  font-family: 楷体;
+}
+.city{
+  margin-top: 50rpx;
+  font-size: 15px;
+  color: #0076ff;
+}
+.wind{
+  margin-top: 50rpx;
+}

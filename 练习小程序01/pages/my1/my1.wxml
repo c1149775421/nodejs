@@ -1,0 +1,24 @@
+<!--pages/my1/my1.wxml-->
+<input type="text" placeholder="请输入本机ip地址" bindchange="ip"/>
+<view class="container">
+    <view>时间选择器</view>
+   <picker mode="time" value="time" start="00:01" end="23:59" bindchange="bindTimeChange">
+        <view>{{time}}</view>
+   </picker>
+<view style="height:80rpx;"></view>
+    <view>日期选择器</view>
+    <picker mode="date" value="date" start="1990-01-01" end="2020-12-31" bindchange="bindDateChange">
+        <view>{{date}}</view>
+   </picker>
+<view style="height:80rpx;"></view>
+    <view>地区选择器</view>
+    <picker range="{{city}}" value="{{index}}" bindchange="bindCityChange">
+        <view>当前选择:{{city[index]}}</view>
+    </picker>
+<view style="height:80rpx;"></view>
+    <button bindtap="btn" type="primary">确认</button>
+<view style="height:80rpx;"></view>
+    <view>{{times}}</view>
+    <view>{{dates}}</view>
+    <view>{{citys}}</view>
+</view>

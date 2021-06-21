@@ -1,0 +1,16 @@
+<!--pages/test/test.wxml-->
+<view>
+  <text>请输入第一个数字</text>
+  <input type="number" bindchange="num1change" />
+</view>
+<view>
+  <text>请输入第二个数字</text>
+  <input type="number" bindchange="num2change" />
+</view>
+<button bindtap="compare">比较</button>
+<view>
+  <text>比较结果：{{result}}</text>
+  <view class="ps">
+  <text>温馨提示：两个数字输入完成后，先点空白处关闭键盘，再点比较。否则结果有误！</text>
+  </view>
+</view>

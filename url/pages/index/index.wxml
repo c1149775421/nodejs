@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="btn-area">
+  <navigator url="../logs/logs?title=logs" open-type="navigate" hover-class="navigator-hover">查看日志</navigator>
+</view>

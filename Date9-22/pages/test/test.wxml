@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view>
+  <wxs src="./text.wxs" module="text" />
+  <view>{{text.msg}}</view>
+  <view>{{text.Foo}}</view>
+</view>

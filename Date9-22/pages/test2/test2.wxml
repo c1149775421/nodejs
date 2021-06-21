@@ -1,0 +1,5 @@
+<!--pages/test2/test2.wxml-->
+<view>
+  <wxs src="./test2.wxs" module="test2" />
+  <view>{{test2.bar}}</view>
+</view>

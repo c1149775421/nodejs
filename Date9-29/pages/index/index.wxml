@@ -1,0 +1,15 @@
+<view class="content">
+  <view>flex-direction：横向</view>
+  <view class="flex-draw">
+    <view class="flex-1">1</view>
+    <view class="flex-2">2</view>
+    <view class="flex-3">3</view>
+  </view>
+
+  <view>flex-direction：纵向</view>
+  <view class="protarit">
+    <view class="flex-11">1</view>
+    <view class="flex-22">2</view>
+    <view class="flex-33">3</view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/my3/my3",
+    "pages/my1/my1",
+    "pages/my2/my2",
+    "pages/my4/my4"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#666666",
+    "navigationBarTitleText": "练习小程序01",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ff6700",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/my1/my1",
+      "text": "选择器"
+    },
+    {
+      "pagePath": "pages/my2/my2",
+      "text": "调查问卷"
+    },
+    {
+      "pagePath": "pages/my3/my3",
+      "text": "主页"
+    },
+    {
+      "pagePath": "pages/my4/my4",
+      "text": "个人中心"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

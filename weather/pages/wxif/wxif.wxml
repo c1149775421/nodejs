@@ -1,0 +1,12 @@
+<!--pages/wxif/wxif.wxml-->
+<view class="container">
+  <input class="ipt" type="text" placeholder="随机分数为：{{result}}">{{item}}</input>
+  <view class="result">
+    <view class="if1" wx:if="{{len >= 60 && len < 70}}">结果为：及格</view>
+    <view class="if2" wx:elif="{{len >= 70 && len < 90}}">结果为：良好</view>
+    <view class="if3" wx:elif="{{len >= 90 && len < 100}}">结果为：优秀</view>
+    <view class="if4" wx:elif="{{len == 100}}">满分，太棒了！</view>
+    <view class="if5" wx:elif="{{len < 60 && len >= 0}}">结果为：不及格</view>
+  </view>
+  
+</view>

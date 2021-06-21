@@ -1,0 +1,21 @@
+<!--pages/my3/my3.wxml-->
+<view style="margin-bottom:30px;">
+    <view wx:if='{{true}}'>A隐藏组件</view>
+    <view wx:if='{{false}}'>B隐藏组件</view>
+    <view wx:if='true'>C隐藏组件</view>
+    <view wx:if='false'>D隐藏组件</view>
+</view>
+
+<view style="margin-bottom:30px;">
+    A.<icon type="search" size="40" color="red"></icon>                 
+    B.<icon type="search" size="40px" color="red"></icon>
+</view>
+
+<view style="margin-bottom:30px;">
+    A.<button type='default' bindtap="ym1">选择器</button>
+    B.<button type='primary' bindtap="ym2">调查问卷</button>
+    C.<button>按钮</button>
+    D.<button type='warn'>按钮</button>
+</view>
+
+

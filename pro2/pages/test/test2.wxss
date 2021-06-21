@@ -1,0 +1,7 @@
+button{
+  color: #fff;/*白色字体*/
+  background: #369;/*蓝色背景*/
+}
+.ps{
+  color: red;
+}

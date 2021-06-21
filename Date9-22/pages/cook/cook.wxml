@@ -1,0 +1,59 @@
+<!--pages/cook/cook.wxml-->
+<view class="content">
+  <view class="img">
+  <swiper autoplay="true" indicator-dots="true" interval="2000">
+    <swiper-item>
+      <image src="../../img/haibao/haibao-1.jpg" style="width:100%;height:230px;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../img/haibao/haibao-2.jpg" style="width:100%;height:230px;"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../img/haibao/haibao-3.jpg" style="width:100%;height:230px;"></image>
+    </swiper-item>
+  </swiper>
+  </view>
+  
+  <view class="nav">
+    <view class="nav-item">
+      <view><image src="../../img/icon/fenlei.jpg" style="width:25px;height:23px;"></image></view>
+      <view>菜谱分类</view>
+    </view>
+
+    <view class="nav-item">
+      <view><image src="../../img/icon/shipin.jpg" style="width:25px;height:23px;"></image></view>
+      <view>视频</view>
+    </view>
+
+    <view class="nav-item">
+      <view><image src="../../img/icon/meishi.jpg" style="width:25px;height:23px;"></image></view>
+      <view>美食养生</view>
+    </view>
+
+    <view class="nav-item">
+      <view><image src="../../img/icon/shangou.jpg" style="width:25px;height:23px;"></image></view>
+      <view>闪购</view>
+    </view>
+
+  </view><!--nav-->
+  <view class="hr"></view>
+
+  <view class="head">
+    <view>香哈头条</view>
+    <view class="right"></view>
+  </view>
+
+  <view class="list">
+    <view class="item" bindtap="seeDetail" id="0">
+        <view><image src="../../img/list/food-1.jpg" style="width:75px;height:58px;"></image></view>
+        <view class="desc">
+          <view class="title">爱心早餐</view>
+          <view class="count">健康养生
+            <view class="liulan">2096浏览</view>
+            <view class="pinglun">6评论</view>
+          </view><!--count-->
+        </view><!--desc-->
+    </view><!--item-->
+  </view><!--list-->
+  <view class="hr2"></view>
+</view><!--content-->

@@ -1,0 +1,18 @@
+/* pages/headline/headline.wxss */
+.v1{
+  text-align:center;
+  margin-top:80rpx;
+}
+.v2{
+  text-align:center;
+  margin-top:20rpx;
+}
+.v3{
+  margin-top: 40rpx;
+}
+.v4{
+  margin-top: 40rpx;
+}
+.v5{
+  margin-top: 40rpx;
+}

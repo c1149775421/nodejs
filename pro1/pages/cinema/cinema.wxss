@@ -1,0 +1,7 @@
+/* pages/cinema/cinema.wxss */
+.cinema{
+  margin-top: 220px;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}

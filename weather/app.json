@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/guangzhou/guangzhou",
+    "pages/wxif/wxif",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0076ff",
+    "navigationBarTitleText": "中国天气网",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#000000",
+    "selectedColor": "#ff6700",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/guangzhou/guangzhou",
+      "text": "广州天气",
+      "iconPath":"img/00.png",
+      "selectedIconPath":"img/01.png"
+    },
+    {
+      "pagePath":  "pages/wxif/wxif",
+      "text": "条件渲染",
+      "iconPath":"img/00.png",
+      "selectedIconPath":"img/01.png"
+    },
+    {
+      "pagePath":  "pages/logs/logs",
+      "text": "日志信息",
+      "iconPath":"img/find-0.jpg",
+      "selectedIconPath":"img/find-1.jpg"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+/* pages/my1/my1.wxss */
+input{
+    border: 2px solid #666666;
+    width: 96%;
+    margin: 10rpx;
+}
