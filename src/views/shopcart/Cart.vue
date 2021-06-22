@@ -25,7 +25,7 @@
         <a @click="emptyCar">清空购物车</a>
       <span>已选商品<span class="totalNum">{{totalNum}}</span> 件</span>
       <span>合计:<span class="totalPrice">¥{{totalPrice | formatPrice}}</span></span>
-      <span @click="show('pay')">去结算</span>
+      <span @click="show('Pay')">去结算</span>
     </div>
       </div>
       <div class="empty" v-else>
@@ -101,13 +101,13 @@
 	      },
 	    show: function (value) {
 	        if(value == 'home'){
-	            this.$router.push({name:'home'});//跳转到主页
+	            this.$router.push({name:'Home'});//跳转到主页
 	        }else{
 	            if(this.totalNum==0){
 	                alert('请至少选择一件商品！');
 	                return false;
 	            }
-	            this.$router.push({name:'pay'});//跳转到支付页面
+	            this.$router.push({name:'Pay'});//跳转到支付页面
 	        }
 	    },
     mounted: function(){

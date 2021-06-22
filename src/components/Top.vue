@@ -18,17 +18,17 @@
                 </div>
                 <div class="topMessage my-shangcheng">
                     <div class="menu-hd">
-                        <a href="#" target="_top"><span class="iconfont">&#xe7aa;</span>个人中心</a>
+                        <a href="javascript:void(0)" target="_top"><span class="iconfont">&#xe7aa;</span>个人中心</a>
                     </div>
                 </div>
                 <div class="topMessage mini-cart">
                     <div class="menu-hd">
-                        <a href="#" target="_top" style="color:red;"><span class="iconfont">&#xe77a;</span>购物车</a>
+                        <a href="javascript:void(0)" @click="show('Shopcart')" target="_top" style="color:red;"><span class="iconfont">&#xe77a;</span>购物车</a>
                     </div>
                 </div>
                 <div class="topMessage favorite">
                     <div class="menu-hd">
-                        <a href="#" target="_top"><span class="iconfont">&#xe721;</span>收藏夹</a>
+                        <a href="javascript:void(0)" target="_top"><span class="iconfont">&#xe721;</span>收藏夹</a>
                     </div>
                 </div>
             </ul>
