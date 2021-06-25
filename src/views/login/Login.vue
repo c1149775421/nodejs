@@ -55,9 +55,9 @@ export default {
     },
     methods:{
         show(value){
-            // this.$router.replace({name:value})
-            this.$router.replace('/register')
-        }
+            this.$router.replace({name:value})
+            // this.$router.replace('/register')
+        }     
     }
 }
 </script>
